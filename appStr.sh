@@ -12,6 +12,8 @@ while [ $# -ne 1 ] ; do        #Décrémente jusqu'au dernier paramètre
     shift
 done
 
-for nameFile in fichier${array[@]} ; do     #Pour chaque élément du tab
+for nameFile in ${fichiers[@]} ; do     #Pour chaque élément du tab
     mv "$nameFile" "$nameFile$1"            #Renomme + str
 done
+
+IFS=$SAVEIFS
