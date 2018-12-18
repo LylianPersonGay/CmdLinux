@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Ajoute extension aux fichiers selectionnés
+#Ajoute str aux fichiers selectionnés
 
 SAVEIFS=$IFS
 IFS=$'\t\n'
